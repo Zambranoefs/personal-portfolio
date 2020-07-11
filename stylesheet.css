@@ -212,7 +212,7 @@ nav a
     padding: 1.5em;
     font-size: medium;
     color: black;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
 }
 
