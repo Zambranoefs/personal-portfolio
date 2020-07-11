@@ -229,7 +229,7 @@ nav a
     font-size: large;
   }
   
-  #contactHeader, h1, #projectsHeader
+  #contactHeader, h1
   {
       font-size: 200%;
   }
@@ -249,6 +249,12 @@ nav a
     display: flex;
     flex-direction: column;
     padding: 0;
+  }
+  
+  #projectsHeader
+  {
+    font-size: 160%;
+    margin-bottom: 1em;
   }
   
   .project-tile
