@@ -107,9 +107,10 @@ body
 
 footer
 {
-    padding: 2em;
+    padding: 2em 0 2em 0;
     text-align: center;
     border-top: 2px solid gold;
+    width: 100%;
 }
 
 
@@ -196,7 +197,6 @@ nav
 {
     background-color: gold;
     color: black;
-    padding: 0.25em 1em 0.25em 0;
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -210,11 +210,59 @@ nav a
 {
     text-decoration: none;
     padding: 1.5em;
-    font-size: large;
+    font-size: medium;
     color: black;
+    justify-self: center;
+    text-align: center;
 }
 
-@media (max-width: 500px)
+
+@media (max-width: 1024px)
+{  
+  .comment
+  {
+    font-size: large;
+  }
+  
+  #contactHeader, h1
+  {
+      font-size: 300%;
+  }
+
+  img, project-tile
+  {
+    width: 23em;
+  }
+  
+  nav
+  {
+    justify-content: center;
+  }
+  
+  #projectsGrid
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #projectsHeader
+  {
+    font-size: 300%;
+    margin-bottom: 1em;
+  }
+  
+  .project-tile
+  {
+    box-shadow: 0 0 0.3em 0.1em #806000;
+    display: block;
+    margin: 0 auto 1.5em auto;
+    transform: none;
+    animation-name: none;
+  }
+  
+}
+
+@media (max-width: 800px)
 {  
   .comment
   {
@@ -225,7 +273,7 @@ nav a
   {
       font-size: 200%;
   }
-  
+
   img, project-tile
   {
     width: 21em;
@@ -233,7 +281,7 @@ nav a
   
   nav
   {
-    padding: 0;
+    justify-content: center;
   }
   
   #projectsGrid
